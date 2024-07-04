@@ -6,12 +6,6 @@
 - [Technologies Used](#technologies-used)
 - [Project Structure](#project-structure)
 - [Setup Instructions](#setup-instructions)
-- [Environment Variables](#environment-variables)
-- [Running the Project](#running-the-project)
-- [Features](#features)
-- [API Endpoints](#api-endpoints)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Introduction
 
@@ -57,3 +51,44 @@ student-management/
 │   ├── app/
 │   │   ├── globals.css
 ├── package.json
+
+# Student Management System
+
+## Setup Instructions
+
+1. **Clone the repository**
+    ```bash
+    git clone https://github.com/your-username/student-management.git
+    cd student-management
+    ```
+
+2. **Install dependencies for the backend**
+    ```bash
+    cd backend
+    npm install
+    ```
+
+3. **Install dependencies for the frontend**
+    ```bash
+    cd ../frontend
+    npm install
+    ```
+
+4. **Create and configure environment variables**
+    - Create a `.env` file in the `backend` directory with the following content:
+      ```plaintext
+      MONGO_URI=your_mongodb_connection_string
+      PORT=5000
+      ```
+
+5. **Start the backend server**
+    ```bash
+    cd backend
+    npm start
+    ```
+
+6. **Start the frontend development server**
+    ```bash
+    cd ../frontend
+    npm run dev
+    ```
