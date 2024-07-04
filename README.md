@@ -19,7 +19,7 @@ The Student Management System is a web application designed to manage students a
 
 ## Technologies Used
 
-- **Frontend**: React.js, Tailwind CSS
+- **Frontend**: Next.js, Tailwind CSS
 - **Backend**: Node.js, Express.js
 - **Database**: MongoDB
 
