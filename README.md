@@ -1,36 +1,94 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Student Management System
 
-## Getting Started
+## Table of Contents
 
-First, run the development server:
+- [Introduction](#introduction)
+- [Technologies Used](#technologies-used)
+- [Project Structure](#project-structure)
+- [Setup Instructions](#setup-instructions)
+
+## Introduction
+
+The Student Management System is a web application designed to manage students and teachers in an educational institution. The admin can add, edit, and delete teachers and students, and view them in a user-friendly dashboard.
+
+## Technologies Used
+
+- **Frontend**: Next.js, Tailwind CSS
+- **Backend**: Node.js, Express.js
+- **Database**: MongoDB
+
+## Project Structure
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+student-management/
+├── backend/
+│   ├── controllers/
+│   │   ├── studentCon.js
+│   │   ├── teacherCon.js
+│   ├── models/
+│   │   ├── studentSchema.js
+│   │   ├── teacherSchema.js
+│   ├── routes/
+│   │   ├── studentRoutes.js
+│   │   ├── teacherRoutes.js
+│   ├── app.js
+├── frontend/
+│   ├── components/
+│   │   ├── AddStudentModal.js
+│   │   ├── AddTeacherModal.js
+│   │   ├── Footer.js
+│   │   ├── Navbar.js
+│   │   ├── Sidebar.js
+│   │   ├── StudentCard.js
+│   │   ├── TeacherCard.js
+│   ├── pages/
+│   │   ├── admin/
+│   │   │   ├── dashboard.js
+│   │   ├── student-dashboard.js
+│   │   ├── teacher-dashboard.js
+│   │   ├── login.js
+│   │   ├── register.js
+│   ├── app/
+│   │   ├── globals.css
+├── package.json
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Student Management System
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Setup Instructions
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. **Clone the repository**
+    ```bash
+    git clone https://github.com/your-username/student-management.git
+    cd student-management
+    ```
 
-## Learn More
+2. **Install dependencies for the backend**
+    ```bash
+    cd backend
+    npm install
+    ```
 
-To learn more about Next.js, take a look at the following resources:
+3. **Install dependencies for the frontend**
+    ```bash
+    cd ../frontend
+    npm install
+    ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4. **Create and configure environment variables**
+    - Create a `.env` file in the `backend` directory with the following content:
+      ```plaintext
+      MONGO_URI=your_mongodb_connection_string
+      PORT=5000
+      ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+5. **Start the backend server**
+    ```bash
+    cd backend
+    node index.js
+    ```
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+6. **Start the frontend development server**
+    ```bash
+    cd ../frontend
+    npm run dev
+    ```
