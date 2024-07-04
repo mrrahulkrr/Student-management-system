@@ -84,7 +84,7 @@ student-management/
 5. **Start the backend server**
     ```bash
     cd backend
-    npm start
+    node index.js
     ```
 
 6. **Start the frontend development server**
