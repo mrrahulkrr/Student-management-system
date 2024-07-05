@@ -1,0 +1,42 @@
+{
+    "version": 2,
+    "builds": [
+        {
+            "src": "next.config.js",
+            "use": "@vercel/next"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/admin/dashboard",
+            "dest": "/admin/dashboard"
+        },
+        {
+            "src": "/student-dashboard",
+            "dest": "/student-dashboard"
+        },
+        {
+            "src": "/teacher-dashboard",
+            "dest": "/teacher-dashboard"
+        },
+        {
+            "src": "/login",
+            "dest": "/login"
+        },
+        {
+            "src": "/register",
+            "dest": "/register"
+        },
+        {
+            "src": "/",
+            "dest": "/home"
+        }
+    ],
+    "redirects": [
+        {
+            "source": "/",
+            "destination": "/home",
+            "permanent": true
+        }
+    ]
+}
