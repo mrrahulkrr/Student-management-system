@@ -31,12 +31,6 @@
             "src": "/",
             "dest": "/home"
         }
-    ],
-    "redirects": [
-        {
-            "source": "/",
-            "destination": "/home",
-            "permanent": true
-        }
     ]
+
 }
